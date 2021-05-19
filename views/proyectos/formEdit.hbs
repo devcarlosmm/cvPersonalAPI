@@ -1,0 +1,38 @@
+<h4>Crea nuevo proyecto</h4>
+<form action="/proyectos/update" method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+        <label>Título</label>
+        <input type="text" name="titulo" class="form-control" value="{{proy.titulo}}">
+    </div>
+    <div class="form-group">
+        <label>Descripción</label>
+        <input type="text" name="descripcion" class="form-control" value="{{proy.descripcion}}">
+    </div>
+    <div class="form-group">
+        <label>URL</label>
+        <input type="text" name="url" class="form-control" value="{{proy.url}}">
+    </div>
+    <div class="form-group">
+        <label>Cliente</label>
+        <input type="text" name="cliente" class="form-control" value="{{proy.cliente}}">
+    </div>
+    <div class="form-group">
+        <label>Url cliente</label>
+        <input type="text" name="url-cliente" class="form-control" value="{{proy.urlCliente}}">
+    </div>
+    <div class="form-group">
+        <label>Categoria</label>
+        <select name="categoria" class="form-control" selected="{{proy.categoria}}">
+            <option value="angular">Angular</option>
+            <option value="nodejs">NodeJs</option>
+            <option value="wordpress">Wordpress</option>
+            <option value="frontend">FrontEnd</option>
+            <option value="backend">BackEnd</option>
+    </div>
+    <div class="form-group">
+        <label>Imagen</label>
+        <input type="file" name="imagen" value="{{proy.imagen}}">
+    </div>
+    <input type="hidden" name="proyectoId" value="{{proy._id}}">
+    <input type="submit" value="Enviar" class="btn btn-block btn-primary">
+</form>

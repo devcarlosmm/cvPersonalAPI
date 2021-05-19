@@ -1,0 +1,46 @@
+<h1>Detalles del proyecto "{{ proy.titulo}}"</h4>
+    <div class="contenido">
+        <div class="row">
+            <div class="col-6">
+                <div class="jumbotron">
+                    <div>
+                        <label>Imagen</label>
+                        <!-- TODO conseguir que salga la imagen en /images/proy.imagen -->
+                        <img src="{{proy.imagen}}" alt="Imagen en teoria">
+                        {{proy.imagen}}
+                    </div>
+                    <div>
+                        <h3>Descripcion:</h3>
+                        <h4>{{ proy.descripcion}}</h4>
+                    </div>
+                    <hr>
+                    <div>
+                        <label>Url al proyecto: <a href="{{proy.url}}">{{proy.titulo}}</a></label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-6">
+                <div class="jumbotron">
+                    <div>
+                        <h3>Categoria:</h3>
+                        <h5>{{ proy.categoria }}</h5>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3>Cliente:</h3>
+                        <h5>{{ proy.cliente }}</h5>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3>Url Cliente:</h3>
+                        <h5><a href="{{proy.urlCliente}}">{{ proy.urlCliente }}</a></h5>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>

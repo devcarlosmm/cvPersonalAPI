@@ -1,0 +1,135 @@
+GET http://localhost:3000/api/proyectos
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiSnVhbmFuIiwiY3JlYXRlZEF0IjoxNTk4MzQ4NDg5LCJleHBpcmVkQXQiOjE1OTg3ODA0ODl9.b6UiCL3cSID6cPJAQkwptj3pnrI9qoSHcJZBfECju6o
+
+
+###
+
+GET http://localhost:3000/api/proyectos/5f3e453b0490eb463c434e17
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiSnVhbmFuIiwiY3JlYXRlZEF0IjoxNTk3OTE1MzkyLCJleHBpcmVkQXQiOjE1OTgzNDczOTJ9.bFSMCvrIZ4gf0Yw2g4tcF7w3-xaEOHtqjjMdwLbx2BI
+
+###
+GET http://localhost:3000/api/proyectos/categoria/angular
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiSnVhbmFuIiwiY3JlYXRlZEF0IjoxNTk3OTE1MzkyLCJleHBpcmVkQXQiOjE1OTgzNDczOTJ9.bFSMCvrIZ4gf0Yw2g4tcF7w3-xaEOHtqjjMdwLbx2BI
+
+###
+POST http://localhost:3000/api/proyectos
+Content-Type: application/json
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiSnVhbmFuIiwiY3JlYXRlZEF0IjoxNTk3OTE1MzkyLCJleHBpcmVkQXQiOjE1OTgzNDczOTJ9.bFSMCvrIZ4gf0Yw2g4tcF7w3-xaEOHtqjjMdwLbx2BI
+
+{
+    "titulo": "CVasd web",
+    "descripcion": "Esta es la descripcion",
+    "url": "http://www.google.es",
+    "cliente": "Google",
+    "urlCliente": "http://www.google.com/quienes-somos",
+    "categoria": "angular"
+}
+
+###
+PUT http://localhost:3000/api/proyectos/5f365d226225173a5c75e602
+Content-Type: application/json
+
+{
+    "titulo": "Proyecto editado2",
+    "descripcion": "Esta es la descripcion",
+    "url": "http://www.google.es",
+    "cliente": "Google",
+    "urlCliente": "http://www.google.com/quienes-somos"
+}
+###
+DELETE http://localhost:3000/api/proyectos/5f3660b07f17bb043459731b
+
+###
+GET http://localhost:3000/api/token
+
+
+
+
+### PRODUCCIóN
+GET https://cvbackheroku.herokuapp.com/api/proyectos
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiSnVhbmFuIiwiY3JlYXRlZEF0IjoxNTk3NzQ2ODg5LCJleHBpcmVkQXQiOjE1OTc3NDcxODl9.vnGnpIaZZr-4Qu-ncR5D55p5UyNRI2MSvcLSNdD0_hw
+
+
+###
+GET https://cvbackheroku.herokuapp.com/api/token
+
+###
+POST https://cvbackheroku.herokuapp.com/api/proyectos
+Content-Type: application/json
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiSnVhbmFuIiwiY3JlYXRlZEF0IjoxNTk3ODM5MTg3LCJleHBpcmVkQXQiOjE1OTc5MjU1ODd9.F2uR1nrcMHomxzvn9hwjL521V-m7z6WcniaePBXl7G0
+
+{
+    "titulo": "CV web",
+    "descripcion": "Esta es la descripcion",
+    "url": "http://www.google.es",
+    "cliente": "Google",
+    "urlCliente": "http://www.google.com/quienes-somos",
+    "categoria": "nodejs"
+}
+
+### MYSQL
+
+GET http://localhost:3000/mysql
+
+###
+
+POST  http://localhost:3000/mysql
+Content-Type: application/json
+
+{
+    "project_title": "Prueba3",
+    "project_image": "dsa",
+    "project_client": "Cepsa"
+}
+###
+
+
+PUT  http://localhost:3000/mysql/5
+Content-Type: application/json
+
+{
+    "project_title": "Prueba3",
+    "project_image": "modificado",
+    "project_client": "Cepsa"
+}
+###
+
+DELETE  http://localhost:3000/mysql/5
+
+###
+
+GET http://localhost:3000/api/proyectosmysql/projectlist
+accesstoken: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTYsInVzdWFyaW8iOiJjLm0ubS5hZG1pbiIsImNyZWF0ZWRBdCI6MTYyMDEyMjY0MywiZXhwaXJlZEF0IjoxNjIwMTI4MDQzfQ.oiobalq1o7FEZgBvOH2mwvkxEyRAv7P-liqyQGyNC5Y
+
+###
+
+GET http://localhost:3000/mysql/addUser
+Content-Type: application/json
+
+{
+    "user_name": "asd",
+    "user_password": "Cepsa",
+    "confPassword": "wiwiw"
+}
+###
+
+GET http://localhost:3000/mysql/check
+Content-Type: application/json
+
+{
+    "user_name": "asd",
+    "user_password": "Cepsa",
+    "confPassword": "wiwiw"
+}
+###
+
+GET http://localhost:3000/api/proyectosmysql/projectlist/decode
+Content-Type: application/json
+accesstoken: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTYsInVzdWFyaW8iOiJjLm0ubS5hZG1pbiIsImNyZWF0ZWRBdCI6MTYxMzk5MjE3MCwiZXhwaXJlZEF0IjoxNjEzOTk3NTcwfQ.2s27t5aKNtJtIuWJDHWnzV9liVoUGfsG_ekHkkrW-d0
+
+###
+
+GET http://localhost:3000/proyectos
+Content-Type: application/json
+accesstoken: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTYsInVzdWFyaW8iOiJjLm0ubS5hZG1pbiIsImNyZWF0ZWRBdCI6MTYxMzk5MjE3MCwiZXhwaXJlZEF0IjoxNjEzOTk3NTcwfQ.2s27t5aKNtJtIuWJDHWnzV9liVoUGfsG_ekHkkrW-d0
+
